@@ -32,16 +32,16 @@ export function LoginView() {
     const email = form.email.value.trim();
     const password = form.password.value.trim();
     if (!email || !password) {
-      errEl.textContent = 'Email dan password wajib diisi.';
+      errEl.textContent = 'Email dan password are required.';
       return;
     }
 
     try {
       submitBtn.disabled = true;
-      submitBtn.textContent = 'Memproses...';
+      submitBtn.textContent = 'Processing...';
 
       const res = await login({ email, password });
-      if (res.error) throw new Error(res.message || 'Gagal masuk.');
+      if (res.error) throw new Error(res.message || 'Failed to Sign IN.');
 
       const { userId, name, token } = res.loginResult;
       saveSession({ token, user: { id: userId, name, email } });
@@ -53,7 +53,7 @@ export function LoginView() {
       errEl.textContent = err.message;
     } finally {
       submitBtn.disabled = false;
-      submitBtn.textContent = 'Masuk';
+      submitBtn.textContent = 'Sign In';
     }
   });
 

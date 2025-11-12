@@ -4,3 +4,7 @@ PUSTAKA KUNCI & CATATAN
   BCCs2eonMI-6H2ctvFaWg-UYdDv387Vno_bzUzALpB442r2lCnsHmtrx8biyPi_E-1fSGABK_Qs_GlvPoJJqxbk
 - Peta: Leaflet (tanpa API key)
 - Endpoint API: https://story-api.dicoding.dev/v1
+
+Student Name : Audric Matthew
+Student ID   : F244D5Y0307
+Deployment URL : https://audrakee.github.io/Proyek2-F244D5Y0307-Audric/
