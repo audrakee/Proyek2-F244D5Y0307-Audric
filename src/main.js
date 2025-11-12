@@ -58,7 +58,7 @@ document.addEventListener('visibilitychange', () => { if (!document.hidden) upda
 
 async function registerSW() {
   if ('serviceWorker' in navigator) {
-    await navigator.serviceWorker.register('/sw.js')
+    await navigator.serviceWorker.register('./sw.js')
   }
 }
 
