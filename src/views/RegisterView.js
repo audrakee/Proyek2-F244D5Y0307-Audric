@@ -7,7 +7,7 @@ export function RegisterView() {
   el.innerHTML = `
     <h1>Register</h1>
     <form class="card" id="form" novalidate>
-      <label for="name">Name</label>
+      <label for="name">Username</label>
       <input id="name" name="name" type="text" required aria-required="true"/>
       <label for="email">Email</label>
       <input id="email" name="email" type="email" required aria-required="true"/>
@@ -26,7 +26,7 @@ export function RegisterView() {
     const name = form.name.value.trim()
     const email = form.email.value.trim()
     const password = form.password.value.trim()
-    if (!name || !email || password.length < 8) return showErr('Nama, email, dan password minimal 8 karakter wajib diisi.')
+    if (!name || !email || password.length < 8) return showErr('Username, email, and password min 8 characters are required.')
     try {
       const res = await register({ name, email, password })
       if (res.error) return showErr(res.message || 'Gagal daftar.')
