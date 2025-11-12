@@ -8,3 +8,5 @@ PUSTAKA KUNCI & CATATAN
 Student Name : Audric Matthew
 Student ID   : F244D5Y0307
 Deployment URL : https://audrakee.github.io/Proyek2-F244D5Y0307-Audric/
+Repository URL : https://github.com/audrakee/Proyek2-F244D5Y0307-Audric
+
